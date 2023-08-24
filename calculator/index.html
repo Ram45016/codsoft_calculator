@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input id="screen" class="screen" type="text" readonly>
+        <div class="buttons">
+            <button class="symbol" onclick="clearScreen()">C</button>
+            <button class="symbol" onclick="calculatePercentage()">%</button>
+            <button class="symbol" onclick="backspace()">&larr;</button>
+            <button class="symbol" onclick="appendToScreen('/')">/</button>
+            <button class="button" onclick="appendToScreen('7')">7</button>
+            <button class="button" onclick="appendToScreen('8')">8</button>
+            <button class="button" onclick="appendToScreen('9')">9</button>
+            <button class="symbol" onclick="appendToScreen('*')">x</button>
+            <button class="button" onclick="appendToScreen('4')">4</button>
+            <button class="button" onclick="appendToScreen('5')">5</button>
+            <button class="button" onclick="appendToScreen('6')">6</button>
+            <button class="symbol" onclick="appendToScreen('-')">-</button>
+            <button class="button" onclick="appendToScreen('1')">1</button>
+            <button class="button" onclick="appendToScreen('2')">2</button>
+            <button class="button" onclick="appendToScreen('3')">3</button>
+            <button class="symbol" onclick="appendToScreen('+')">+</button>
+            <button class="button" onclick="appendToScreen('00')">00</button>
+            <button class="button" onclick="appendToScreen('0')">0</button>
+            <button class="button" onclick="appendToScreen('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
